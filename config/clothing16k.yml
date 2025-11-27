@@ -1,0 +1,25 @@
+model:
+  clip_model: "ViT-L/14"
+  norm_family: clip
+  feat_dim: 768
+
+train:
+  lr: 0.0001
+  attn_dropout: 0.3
+  mlp_dropout: 0.3
+  proj_dropout: 0.3
+  prompt_dropout: 0.3
+  weight_decay: 0.00005
+  context_length: 16
+  train_batch_size: 128
+  gradient_accumulation_steps: 1
+  best_model_metric: AUC     #best_unseen  best_seen AUC best_loss best_hm
+  save_model: True
+  alpha_1: 0.5
+  alpha_2: 0.05
+  alpha_3: 0.05
+
+test:
+  eval_batch_size: 512
+  topk: 1
+  threshold: 0.4

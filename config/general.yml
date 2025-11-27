@@ -1,0 +1,3 @@
+paths:
+  clip_path: "/media/wangqs/宏碁GM7000/Pretrained_Models/CLIP"
+  dataset_root: "/home/wangqs/Datasets/"
