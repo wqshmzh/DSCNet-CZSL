@@ -11,7 +11,7 @@
 
 Thank you for reading our work.
 
-We provide the pre-trained files for UT-Zappos50K, MIT-States, C-GQA, and VAW-CZSL in Google Drive. All pre-trained files are based on the frozen [pre-trained OpenAI CLIP model](https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt) in FP16 format. Please run *evaluation.py* to evaluate with the following downloaded *.pt* files. You may get slightly different results from the reported ones due to your hardwares and environments.
+We provide the pre-trained files for UT-Zappos50K, MIT-States, C-GQA, and VAW-CZSL in Google Drive. All pre-trained files are based on the frozen [pre-trained OpenAI CLIP model](https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt) in default FP16 format. Please run *evaluation.py* to evaluate with the following downloaded *.pt* files. You may get slightly different results from the reported ones due to your hardwares and environments.
 
 | Dataset      |Top-k|Seen|Unseen| HM | AUC| Size  | URL                                                                                               |
 |--------------|-----|----|------|----|----|-------|---------------------------------------------------------------------------------------------------|
@@ -19,6 +19,8 @@ We provide the pre-trained files for UT-Zappos50K, MIT-States, C-GQA, and VAW-CZ
 | MIT-States   |Top-1|49.2| 52.4 |38.7|21.8|319.7MB| [Download](https://drive.google.com/file/d/1fGk0r2Cqi2MTOlsMKQk0SxAftN6G7se1/view?usp=drive_link) |
 | C-GQA        |Top-1|42.6| 34.3 |30.1|12.7|321.7MB| [Download](https://drive.google.com/file/d/1hm81tZ3Cg6cNmtFVSNZTT0s_2B1vr9cW/view?usp=drive_link) |
 | VAW-CZSL     |Top-5|42.5| 50.0 |32.6|15.6|321.4MB| [Download](https://drive.google.com/file/d/1EJytbpgPP7fr1uATbhqkaRwR7f_OQctD/view?usp=drive_link) |
+
+The downloaded *.pt* files are supposed to be placed in *saves/(the chosen dataset)/XXX.pt*. For example, *ut-zap50k.pt* should be placed like *saves/ut-zap50k/ut-zap50k.pt*.
 
 If you find this work interesting please cite:
 
