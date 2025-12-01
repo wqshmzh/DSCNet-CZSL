@@ -11,9 +11,7 @@
 
 Thank you for reading our work.
 
-We provide the pre-trained files for UT-Zappos50K, MIT-States, C-GQA, and VAW-CZSL in Google Drive. Please run *evaluation.py* to evaluate with the following downloaded *.pt* files.
-
-You may get slightly different results from the reported ones due to your hardwares and environments.
+We provide the pre-trained files for UT-Zappos50K, MIT-States, C-GQA, and VAW-CZSL in Google Drive. All pre-trained files are based on the frozen [pre-trained OpenAI CLIP model](https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt) in FP16 format. Please run *evaluation.py* to evaluate with the following downloaded *.pt* files. You may get slightly different results from the reported ones due to your hardwares and environments.
 
 | Dataset      |Top-k|Seen|Unseen| HM | AUC| Size  | URL                                                                                               |
 |--------------|-----|----|------|----|----|-------|---------------------------------------------------------------------------------------------------|
