@@ -154,20 +154,6 @@ def evaluate(config, model, loader, print):
     return test_stats
 
 if __name__ == "__main__":
-    if not config.ddp:
-        config.world_size = 1
-        main(0, config)
-    else:
-        set_start_method("spawn")
-        lock = Lock()
-        processes = []
-        config.world_size = len(config.device_ids.split(","))
-        for rank in range(config.world_size):
-            p = Process(target=main, 
-                        args=(rank, config), 
-                        kwargs={"lock": lock})
-            p.start()
-            processes.append(p)
-        for p in processes:
-            p.join()
+    config.world_size = 1
+    main(0, config)
     print("Program terminated")
